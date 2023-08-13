@@ -7,7 +7,7 @@ const Intro=()=>{
     return(
         <div className="intro-section">
             <h1 className="intro-heading">Welcome to My Expenditure</h1>
-            <p className="intro-para">Here you can add your new expenses & analysis the expenpes by year wise</p>
+            <p className="intro-para">Here you can add your new expenses & Analysis the expenpes by year wise</p>
         </div>
     );
 };

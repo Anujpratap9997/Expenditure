@@ -40,15 +40,15 @@ const ExpenseForm=(props)=>{
         <div className="new-expense__controls">
             <div className="new-expense__control">
                 <label htmlFor="">Title</label>
-                <input type="text" value={enteredTitle} onChange={titleChangeHandler} /> 
+                <input type="text" value={enteredTitle} onChange={titleChangeHandler} required placeholder="Enter Expenditure Title here"/> 
             </div>
             <div className="new-expense__control">
                 <label htmlFor="">Amount</label>
-                <input type="text" min="0.01" step="0.01" value={enteredAmount} onChange={amountChangeHandler} /> 
+                <input type="text" min="0.01" step="0.01" value={enteredAmount} onChange={amountChangeHandler} required placeholder="Enter Expenditure Amount here" pattern="[0-9]+(\.[0-9]+)?" title="Enter a numerical value"/> 
             </div>
             <div className="new-expense__control">
                 <label htmlFor="">Date</label>
-                <input type="date" min="2019-01-01" max="2023-07-31" value={enteredDate} onChange={dateChangeHandler} /> 
+                <input type="date" min="2019-01-01" max="2023-07-31" value={enteredDate} onChange={dateChangeHandler} required /> 
             </div>
         </div>
         <div className="new-expense__actions">
